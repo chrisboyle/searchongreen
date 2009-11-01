@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1" package="name.boyle.chris.searchongreen">
+	<uses-sdk android:minSdkVersion="4"/>
+	<application android:icon="@drawable/icon" android:label="Search on green">
+		<activity android:name=".SearchOnGreen" android:excludeFromRecents="true" android:noHistory="true" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VOICE_COMMAND"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>
